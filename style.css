@@ -1,0 +1,39 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.skip-link:focus,
+.skip-link:hover {
+    opacity: 1;
+}
+#main-content:focus {
+    outline: none;
+}
+nav{
+    background-color: blue;
+    display:block;
+    display:fixed;
+}
+.bar{display: flex;
+  padding: 8px;
+  color: #FFFFFF;
+  text-decoration: none;}
+img{
+    border: 4px solid #006;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+  
