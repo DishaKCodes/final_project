@@ -1,62 +1,80 @@
 body{
     background-color: antiquewhite;
 }
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.skip-link:focus,
-.skip-link:hover {
-    opacity: 1;
-}
-#main-content:focus {
-    outline: none;
-}
 nav{
     background-color: blue;
-    display:block;
-    display:fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
 }
-.bar{display: flex;
-  padding: 8px;
-  color: #FFFFFF;
-  text-decoration: none;}
 img{
-    border: 4px solid #006;
+border: 4px solid #006;
   padding: 8px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
-  
-.gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensure images maintain aspect ratio */
-}
-.gallery img:hover {
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 150px;
 }
 header img{
     display: block;
     margin: 0 auto;
-    width: 100;
+    width: 70%;
     align-items: center;
-}
+    height: 50vh;
+} 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li {
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+    }
+.unique{
+    text-decoration: none;
 
+}
+a.unique:hover {
+    background-color: #f0f0f0; /* Change to desired background color */
+}
+.bar{display: inline;
+    padding: 8px;
+    color: #FFFFFF;
+    text-decoration: none;}
+#gallery{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 20px;
+}
+#gallery img {
+    width: 80%;
+    height: auto;
+}
+#gallery img:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+#offpage{
+    position: absolute;
+    background: yellow;
+    transform: translateY(-120%);
+    transition: transform 325ms ease-in;
+}
+#offpage :focus {
+    transform: translateY(0);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+nav li:hover {
+    background-color: antiquewhite;
+    
+  }
+  nav a:hover {
+    color: blue;
+  }
+  
 
 
 
