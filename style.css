@@ -49,7 +49,12 @@ img{
 .gallery img:hover {
     outline: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} 
+}
+header img{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
 
 
 
