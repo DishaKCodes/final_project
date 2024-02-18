@@ -32,6 +32,20 @@ img{
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust as needed for spacing between images */
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+  }
+  .gallery img:hover {
+    outline: 2px solid #000; /* Add a black outline when hovering over the image */
+  }  
 
 
 
